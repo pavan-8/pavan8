@@ -1,21 +1,28 @@
-class sum
-{
- void sum(int a,int b)
+class sum1
  {
-  System.out.println(a+b);
-  }
-  void sum(double a,double b)
+  int sum2;
+  int sum3;
+  double float2;
+  void setdata(int su2, int su3, double f2)
   {
-   System.ou.println(a+b);
+   sum2=su2;
+   sum3=su3;
+   float2=f2;
    }
-  }
-  class sumdemo
-  {
-   public static void main(String agrs[])
+   void print()
    {
-    sum s=new sum();
-    s.sum(10,20);
-    s.sum(10,20,30);
-    s.sum(10.5,15.5);
+    System.out.println("sum of 2 number="+sum2);
+    System.out.println("sum of 3 number="+sum3);
+    System.out.println("double of 2 number="+float2);
+    }
    }
-  }
+class sum1demo
+    {
+     public static void main(String args[])
+     {
+      sum s=new sum();
+      System.out.println(s.sum(10,20));
+      System.out.println(s.sum(10,20,30));
+      System.out.println(s.sum(10.5,20.5));
+     }
+ }
